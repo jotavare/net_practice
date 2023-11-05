@@ -23,7 +23,7 @@ NetPractice is a practical networking exercise aimed at exploring the fundamenta
 <a href="https://github.com/jotavare/philosophers/blob/master/subject/en_subject_netpractice.pdf">Click here</a> for the subject of this project.
 
 ## HOW TO USE
-#### EXECUTION
+### EXECUTION
 #### 1º - Change directory
 ```bash
 cd netpractice/netpractice/exercices/
@@ -34,35 +34,35 @@ cd netpractice/netpractice/exercices/
 open -a "Google Chrome" index.html
 ```
 
-#### INFORMATION
+### INFORMATION
 #### Complete all 10 levels
-> There will be a practice and evaluation mode
+> There will be a practice and evaluation mode.
 
-`Practice mode` - Insert your 42 intra username. You will do all 10 levels.
-`Evaluation mode` - 3 random leves from level 6 to level 10. You only have 15 minutes for all.
+- `Practice mode` - Insert your 42 intra username. You will do all 10 levels.
+- `Evaluation mode` - 3 random leves from level 6 to level 10. You only have 15 minutes for all.
 
 #### Buttons
-> There will be 2 buttons on the top left corner (3 if you successfully completed a level)
+> There will be 2 buttons on the top left corner (3 if you successfully completed a level).
 
-`Check again` - Verify whether your configuration was correct or not.
-`Get my config` - Download your configuration. It will be needed to turn in your assignment.
-`Next level` - Click on this button to get to the next level.
+- `Check again` - Verify whether your configuration was correct or not.
+- `Get my config` - Download your configuration. It will be needed to turn in your assignment.
+- `Next level` - Click on this button to get to the next level.
 
 #### Important
 Before moving to the next level, don’t forget to export your configuration using the Get my config button so you can put it in your Git repository.
 
-## Resources
-#### What is a subnet?
+## RESOURCES
+### What is a subnet?
 
   A **subnet or a subnetwork** is a *network inside a network*. Subnets make networks more efficient.
   
   **Subnetting** is the process of stealing bits from the HOST part of IP address in order to divide the large network into smaller ones called subnets. After subnetting, we end up with **NETWORK SUBNET HOST** fields, and we always reserve an IP address to *identify the subnet* and another one to *identify the broadcast subnet address*, and through subnetting, network traffic can travel a shorter distance without passing through unnecessary routes to reach its destination.
 
-#### How to calculate a subnet mask from IP address step by step?
+### How to calculate a subnet mask from IP address step by step?
 
   We will work with the IP address `10.20.4.13/29`
 
-  ### Step 1: Find Subnet Number:
+  #### Step 1: Find Subnet Number:
     Subtract prefix number from /32
     32 - 29 = 3
     
@@ -114,7 +114,7 @@ Before moving to the next level, don’t forget to export your configuration usi
     Max Host Address  -> 10.20.4.14/29
     Broadcast Address -> 10.20.4.15/29
 
-#### Subnet Mask Chart
+### Subnet Mask Chart
 Here is a quick reference table for help when subnetting.
 |Subnet Mask 	|CIDR |	Binary Notation| 	Network Bits| 	Host Bits| 	Available Addresses |
 | -             | -    | -                                     | -    | -     | -           | 
@@ -144,7 +144,7 @@ Here is a quick reference table for help when subnetting.
 |255.128.0.0    | 	/9 | 	11111111.10000000.00000000.00000000| 	9 | 	23| 	8388608 |
 |255.0.0.0      |   /8 | 	11111111.00000000.00000000.00000000| 	8 | 	24| 	16777216| 
 
-#### A command line utility that will help you understand more about Address Manupilation:
+### A command line utility that will help you understand more about Address Manupilation:
 
     brew install ipcalc
    
