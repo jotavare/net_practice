@@ -4,7 +4,7 @@
 
 <p align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2312bab9&style=flat-square"/>
-	<img src="https://img.shields.io/badge/evaluated-25%09%2F%2023%20%2F%202022-success?color=%2312bab9&style=flat-square"/>
+	<img src="https://img.shields.io/badge/evaluated-25%20%2F%2009%20%2F%202023-success?color=%2312bab9&style=flat-square"/>
 	<img src="https://img.shields.io/badge/score-100%20%2F%20100-success?color=%2312bab9&style=flat-square"/>
 	<img src="https://img.shields.io/github/languages/top/jotavare/netpractice?color=%2312bab9&style=flat-square"/>
 	<img src="https://img.shields.io/github/last-commit/jotavare/netpractice?color=%2312bab9&style=flat-square"/>
