@@ -34,33 +34,31 @@ cd netpractice/netpractice/exercices/
 open -a "Google Chrome" index.html
 ```
 
-#### 3º - Complete all 10 levels
+#### INFORMATION
+#### Complete all 10 levels
 > There will be a practice and evaluation mode
-```bash
-Practice mode - Insert your 42 intra username. You will do all 10 levels.
-Evaluation mode - 3 random leves from level 6 to level 10. You only have 15 minutes for all.
-```
+
+`Practice mode` - Insert your 42 intra username. You will do all 10 levels.
+`Evaluation mode` - 3 random leves from level 6 to level 10. You only have 15 minutes for all.
 
 #### Buttons
 > There will be 2 buttons on the top left corner (3 if you successfully completed a level)
-```bash
-Check again - Verify whether your configuration was correct or not.
-Get my config - Download your configuration. It will be needed to turn in your assignment.
-Next level - Click on this button to get to the next level.
-```
+
+`Check again` - Verify whether your configuration was correct or not.
+`Get my config` - Download your configuration. It will be needed to turn in your assignment.
+`Next level` - Click on this button to get to the next level.
 
 #### Important
 Before moving to the next level, don’t forget to export your configuration using the Get my config button so you can put it in your Git repository.
 
 ## Resources
-
-## What is a subnet?
+#### What is a subnet?
 
   A **subnet or a subnetwork** is a *network inside a network*. Subnets make networks more efficient.
   
   **Subnetting** is the process of stealing bits from the HOST part of IP address in order to divide the large network into smaller ones called subnets. After subnetting, we end up with **NETWORK SUBNET HOST** fields, and we always reserve an IP address to *identify the subnet* and another one to *identify the broadcast subnet address*, and through subnetting, network traffic can travel a shorter distance without passing through unnecessary routes to reach its destination.
 
-## How to calculate a subnet mask from IP address step by step?
+#### How to calculate a subnet mask from IP address step by step?
 
   We will work with the IP address `10.20.4.13/29`
 
@@ -83,7 +81,7 @@ Before moving to the next level, don’t forget to export your configuration usi
     
     Subnet Mask = 255.255.255.248
   
-  ### Step 2: Find Subnet Size:
+  #### Step 2: Find Subnet Size:
     Raise 2 to the power of deducation (8 - 3 = 5) -> Let's called it n.
     
     2 ** n    = Subnet Size.
@@ -93,30 +91,30 @@ Before moving to the next level, don’t forget to export your configuration usi
     NOTE: 8 is the block size for the subnet, so for example:
     the increments will now be 0 8 16 24 32 and so on (we add 8 each time)
     
-  ### Step 3: Find Broadcast Address:
+  #### Step 3: Find Broadcast Address:
     Subnet size - 1
     (2 ** n) - 1  = Broadcast Address
     (2 ** 3) - 1  = (8 - 1) = 7
   
-  ### Step 4: Locate IP Address Subnet:
+  #### Step 4: Locate IP Address Subnet:
     Identify subnet block for IP address:
     -> Where in each increment is the address 10.20.4.13/29 located (0 8 16 32 40)?
     
     13 falls between 8 and 16 and therefore the address is in the valid host range of the subnet 10.20.4.8/29
   
-  ### Step 5: Calculate The Valid Hosts:
+  #### Step 5: Calculate The Valid Hosts:
     Subnet size - 2
     (2 ** n) - 2 = Valid Host Range
     (2 ** 3) - 2 = (8 - 2) = 6
     
-  ### And from these steps, we can know 4 important things:
+  #### And from these steps, we can know 4 important things:
     
     Subnet Address    -> 10.20.4.8/29
     Min Host Address  -> 10.20.4.9/29
     Max Host Address  -> 10.20.4.14/29
     Broadcast Address -> 10.20.4.15/29
 
-## Subnet Mask Chart
+#### Subnet Mask Chart
 Here is a quick reference table for help when subnetting.
 |Subnet Mask 	|CIDR |	Binary Notation| 	Network Bits| 	Host Bits| 	Available Addresses |
 | -             | -    | -                                     | -    | -     | -           | 
@@ -146,7 +144,7 @@ Here is a quick reference table for help when subnetting.
 |255.128.0.0    | 	/9 | 	11111111.10000000.00000000.00000000| 	9 | 	23| 	8388608 |
 |255.0.0.0      |   /8 | 	11111111.00000000.00000000.00000000| 	8 | 	24| 	16777216| 
 
-## A command line utility that will help you understand more about Address Manupilation:
+#### A command line utility that will help you understand more about Address Manupilation:
 
     brew install ipcalc
    
