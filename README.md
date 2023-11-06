@@ -42,15 +42,15 @@ open -a "Google Chrome" index.html
 - `Practice mode` - Insert your 42 intra username. You will do all 10 levels.
 - `Evaluation mode` - 3 random leves from level 6 to level 10. You only have 15 minutes for all.
 
+> [!WARNING]
+> Before moving to the next level, don’t forget to export your configuration using the Get my config button so you can put it in your Git repository.
+
 #### Buttons
 > There will be 2 buttons on the top left corner (3 if you successfully completed a level).
 
 - `Check again` - Verify whether your configuration was correct or not.
 - `Get my config` - Download your configuration. It will be needed to turn in your assignment.
 - `Next level` - Click on this button to get to the next level.
-
-> [!WARNING]
-> Before moving to the next level, don’t forget to export your configuration using the Get my config button so you can put it in your Git repository.
 
 ## RESOURCES
 ### What is a subnet?
