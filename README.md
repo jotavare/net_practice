@@ -49,8 +49,8 @@ open -a "Google Chrome" index.html
 - `Get my config` - Download your configuration. It will be needed to turn in your assignment.
 - `Next level` - Click on this button to get to the next level.
 
-#### Important
-Before moving to the next level, don’t forget to export your configuration using the Get my config button so you can put it in your Git repository.
+> [!WARNING]
+> Before moving to the next level, don’t forget to export your configuration using the Get my config button so you can put it in your Git repository.
 
 ## RESOURCES
 ### What is a subnet?
