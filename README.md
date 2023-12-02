@@ -15,6 +15,8 @@
 <p align="center">
 	<a href="#about">About</a> •
 	<a href="#how-to-use">How to use</a> •
+	<a href="#practice-and-evaluation">Practice and Evaluation</a> •
+	<a href="#resources">Resources</a> •
 	<a href="#license">License</a>
 </p>
 
@@ -108,8 +110,10 @@ Identify subnet block for IP address:
 -> Where in each increment is the address 10.20.4.13/29 located (0 8 16 32 40)?
 
 13 falls between 8 and 16 and therefore the address is in the valid host range of the subnet 10.20.4.8/29
+```
 
 #### 5º - Calculate The Valid Hosts:
+```
 Subnet size - 2
 (2 ** n) - 2 = Valid Host Range
 (2 ** 3) - 2 = (8 - 2) = 6
@@ -126,7 +130,6 @@ Broadcast Address -> 10.20.4.15/29
 ### Subnet Mask Chart
 > Here is a quick reference table for help when subnetting.
 
-```
 |Subnet Mask 	|CIDR      |	Binary Notation                    |Network Bits  |Host Bits | Available Addresses |
 | -             | -        | -                                     | -    | -     | -           | 
 |255.255.255.255| 	/32| 	11111111.11111111.11111111.11111111| 	32| 	0 | 	1       |
@@ -154,7 +157,6 @@ Broadcast Address -> 10.20.4.15/29
 |255.192.0.0    | 	/10| 	11111111.11000000.00000000.00000000| 	10| 	22| 	4194304 |
 |255.128.0.0    | 	/9 | 	11111111.10000000.00000000.00000000| 	9 | 	23| 	8388608 |
 |255.0.0.0      |       /8 | 	11111111.00000000.00000000.00000000| 	8 | 	24| 	16777216| 
-```
 
 ### A command line utility that will help you understand more about Address Manipulation:
 ```
