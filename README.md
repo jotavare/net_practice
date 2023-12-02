@@ -155,5 +155,5 @@ Here is a quick reference table for help when subnetting.
 
 ## LICENSE
 <p>
-This work is published under the terms of <a href="https://github.com/jotavare/jotavare/blob/main/LICENSE">42 Unlicense</a>.
+This work is published under the terms of <a href="https://github.com/jotavare/net_practice/blob/main/LICENSE">Unlicense</a>.
 </p>
