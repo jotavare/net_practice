@@ -16,7 +16,7 @@
 	<a href="#about">About</a> •
 	<a href="#how-to-use">How to use</a> •
 	<a href="#practice-and-evaluation">Practice and Evaluation</a> •
-	<a href="#resources">Resources</a> •
+	<a href="#subnet">Subnet</a> •
 	<a href="#license">License</a>
 </p>
 
@@ -67,9 +67,7 @@ brew install ipcalc
 **Subnetting** is the process of stealing bits from the HOST part of an IP address to divide the large network into smaller ones called subnets. After subnetting, we end up with **NETWORK SUBNET HOST** fields, and we always reserve an IP address to *identify the subnet* and another one to *identify the broadcast subnet address*, and through subnetting, network traffic can travel a shorter distance without passing through unnecessary routes to reach its destination.
 
 #### CALCULATE SUBNET MASK FROM IP ADDRESS
-We will work with the IP address `10.20.4.13/29`
-
-> 1º - Find Subnet Number:
+> 1º - Find Subnet Number (we are gonna use the IP address `10.20.4.13/29` for this example):
 ```
 Subtract prefix number from /32
 32 - 29 = 3
