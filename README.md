@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/jotavare/jotavare/blob/main/42/banner/new/42_netpractice_banner_new.png">
+  <img src="https://github.com/jotavare/jotavare/blob/main/42/banners/piscine_and_common_core/github_piscine_and_common_core_banner_net_practice.png">
 </p>
 
 <p align="center">
@@ -145,7 +145,7 @@ Here is a quick reference table for help when subnetting.
 |255.128.0.0    | 	/9 | 	11111111.10000000.00000000.00000000| 	9 | 	23| 	8388608 |
 |255.0.0.0      |   /8 | 	11111111.00000000.00000000.00000000| 	8 | 	24| 	16777216| 
 
-### A command line utility that will help you understand more about Address Manupilation:
+### A command line utility that will help you understand more about Address Manipulation:
 
     brew install ipcalc
    
