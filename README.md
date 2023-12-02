@@ -23,7 +23,8 @@
 ## ABOUT
 This is a practical networking exercise aimed at exploring the fundamentals of networking. In this project, I configured a small-scale network and delved into the world of TCP/IP addressing. The goal is to complete 10 levels, each designed to challenge and enhance my networking knowledge.
 
-<a href="https://github.com/jotavare/netpractice/blob/main/subject/en_subject_netpractice.pdf">Click here</a> for the subject of this project.
+- [Project subject](https://github.com/jotavare/netpractice/blob/main/subject/en_subject_netpractice.pdf)
+- [References](https://github.com/jotavare/42-resources#04-netpractice)
 
 ## HOW TO USE
 #### 1º - Change directory
