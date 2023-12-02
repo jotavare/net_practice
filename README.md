@@ -52,7 +52,7 @@ brew install ipcalc
 - `Evaluation mode` - 3 random levels from level 6 to level 10. You only have 15 minutes for all.
 
 > [!WARNING]
-> Before moving to the next level, don’t forget to export your configuration using the Get My Config button so you can put it in your Git repository.
+> Before moving to the next level, don’t forget to export your configuration using the `Get My Config` button so you can put it in your Git repository.
 
 #### Buttons
 > There will be 2 buttons on the top left corner (3 if you completed a level):
@@ -61,8 +61,7 @@ brew install ipcalc
 - `Get my config` - Download your configuration. It will be needed to turn in your assignment.
 - `Next level` - Click on this button to get to the next level.
 
-## RESOURCES
-#### SUBNET
+## SUBNET
 > A **subnet or subnetwork** is a *network inside a network*. Subnets make networks more efficient.
 
 **Subnetting** is the process of stealing bits from the HOST part of an IP address to divide the large network into smaller ones called subnets. After subnetting, we end up with **NETWORK SUBNET HOST** fields, and we always reserve an IP address to *identify the subnet* and another one to *identify the broadcast subnet address*, and through subnetting, network traffic can travel a shorter distance without passing through unnecessary routes to reach its destination.
@@ -133,7 +132,7 @@ Max Host Address  -> 10.20.4.14/29
 Broadcast Address -> 10.20.4.15/29
 ```
 
-### Subnet Mask Chart
+#### Subnet Mask Chart
 > Here is a quick reference table for help when subnetting.
 
 |Subnet Mask 	|CIDR      |	Binary Notation                    |Network Bits  |Host Bits | Available Addresses |
