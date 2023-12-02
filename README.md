@@ -19,7 +19,7 @@
 </p>
 
 ## ABOUT
-This is a practical networking exercise aimed at exploring the fundamentals of networking. In this project, I will configure small-scale networks and delve into the world of TCP/IP addressing. The goal is to complete 10 levels, each designed to challenge and enhance my networking knowledge.
+This is a practical networking exercise aimed at exploring the fundamentals of networking. In this project, I configured a small-scale network and delved into the world of TCP/IP addressing. The goal is to complete 10 levels, each designed to challenge and enhance my networking knowledge.
 
 <a href="https://github.com/jotavare/netpractice/blob/main/subject/en_subject_netpractice.pdf">Click here</a> for the subject of this project.
 
@@ -40,13 +40,13 @@ open -a "Google Chrome" index.html
 > There will be a practice and evaluation mode.
 
 - `Practice mode` - Insert your 42 intra username. You will do all 10 levels.
-- `Evaluation mode` - 3 random leves from level 6 to level 10. You only have 15 minutes for all.
+- `Evaluation mode` - 3 random levels from level 6 to level 10. You only have 15 minutes for all.
 
 > [!WARNING]
-> Before moving to the next level, don’t forget to export your configuration using the Get my config button so you can put it in your Git repository.
+> Before moving to the next level, don’t forget to export your configuration using the Get My Config button so you can put it in your Git repository.
 
 #### Buttons
-> There will be 2 buttons on the top left corner (3 if you successfully completed a level).
+> There will be 2 buttons on the top left corner (3 if you completed a level).
 
 - `Check again` - Verify whether your configuration was correct or not.
 - `Get my config` - Download your configuration. It will be needed to turn in your assignment.
@@ -55,11 +55,11 @@ open -a "Google Chrome" index.html
 ## RESOURCES
 ### What is a subnet?
 
-  A **subnet or a subnetwork** is a *network inside a network*. Subnets make networks more efficient.
+  A **subnet or subnetwork** is a *network inside a network*. Subnets make networks more efficient.
   
-  **Subnetting** is the process of stealing bits from the HOST part of IP address in order to divide the large network into smaller ones called subnets. After subnetting, we end up with **NETWORK SUBNET HOST** fields, and we always reserve an IP address to *identify the subnet* and another one to *identify the broadcast subnet address*, and through subnetting, network traffic can travel a shorter distance without passing through unnecessary routes to reach its destination.
+  **Subnetting** is the process of stealing bits from the HOST part of an IP address to divide the large network into smaller ones called subnets. After subnetting, we end up with **NETWORK SUBNET HOST** fields, and we always reserve an IP address to *identify the subnet* and another one to *identify the broadcast subnet address*, and through subnetting, network traffic can travel a shorter distance without passing through unnecessary routes to reach its destination.
 
-### How to calculate a subnet mask from IP address step by step?
+### How to calculate a subnet mask from an IP address step by step?
 
   We will work with the IP address `10.20.4.13/29`
 
