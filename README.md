@@ -38,8 +38,15 @@ open -a "Google Chrome" index.html
 ```
 
 ## PRACTICE AND EVALUATION
+#### Utility
+> This utility will help us understand more about Address Manipulation:
+
+```
+brew install ipcalc
+```
+
 #### Complete all 10 levels
-> There will be a practice and evaluation mode.
+> There will be a practice and evaluation mode:
 
 - `Practice mode` - Insert your 42 intra username. You will do all 10 levels.
 - `Evaluation mode` - 3 random levels from level 6 to level 10. You only have 15 minutes for all.
@@ -48,23 +55,22 @@ open -a "Google Chrome" index.html
 > Before moving to the next level, don’t forget to export your configuration using the Get My Config button so you can put it in your Git repository.
 
 #### Buttons
-> There will be 2 buttons on the top left corner (3 if you completed a level).
+> There will be 2 buttons on the top left corner (3 if you completed a level):
 
 - `Check again` - Verify whether your configuration was correct or not.
 - `Get my config` - Download your configuration. It will be needed to turn in your assignment.
 - `Next level` - Click on this button to get to the next level.
 
 ## RESOURCES
-### What is a subnet?
+#### SUBNET
 > A **subnet or subnetwork** is a *network inside a network*. Subnets make networks more efficient.
 
 **Subnetting** is the process of stealing bits from the HOST part of an IP address to divide the large network into smaller ones called subnets. After subnetting, we end up with **NETWORK SUBNET HOST** fields, and we always reserve an IP address to *identify the subnet* and another one to *identify the broadcast subnet address*, and through subnetting, network traffic can travel a shorter distance without passing through unnecessary routes to reach its destination.
 
-### How to calculate a subnet mask from an IP address step by step?
-
+#### CALCULATE SUBNET MASK FROM IP ADDRESS
 We will work with the IP address `10.20.4.13/29`
 
-#### 1º - Find Subnet Number:
+> 1º - Find Subnet Number:
 ```
 Subtract prefix number from /32
 32 - 29 = 3
@@ -85,9 +91,9 @@ You might be asking why 8 bits, 8 bits are required for each octet.
 Subnet Mask = 255.255.255.248
 ```
 
-#### 2º - Find Subnet Size:
+> 2º - Find Subnet Size:
 ```
-Raise 2 to the power of deducation (8 - 3 = 5) -> Let's called it n.
+Raise 2 to the power of deducation (8 - 3 = 5) -> Let's call it n.
 
 2 ** n    = Subnet Size.
 2 ** 3    = Subnet Sizes for each subnet.
@@ -97,14 +103,14 @@ NOTE: 8 is the block size for the subnet, so for example:
 the increments will now be 0 8 16 24 32 and so on (we add 8 each time)
 ```
 
-#### 3º - Find Broadcast Address:
+> 3º - Find Broadcast Address:
 ```
 Subnet size - 1
 (2 ** n) - 1  = Broadcast Address
 (2 ** 3) - 1  = (8 - 1) = 7
 ```
 
-#### 4º - Locate IP Address Subnet:
+> 4º - Locate IP Address Subnet:
 ```
 Identify subnet block for IP address:
 -> Where in each increment is the address 10.20.4.13/29 located (0 8 16 32 40)?
@@ -112,14 +118,14 @@ Identify subnet block for IP address:
 13 falls between 8 and 16 and therefore the address is in the valid host range of the subnet 10.20.4.8/29
 ```
 
-#### 5º - Calculate The Valid Hosts:
+> 5º - Calculate The Valid Hosts:
 ```
 Subnet size - 2
 (2 ** n) - 2 = Valid Host Range
 (2 ** 3) - 2 = (8 - 2) = 6
 ```
 
-#### And from these steps, we can know 4 important things:
+> And from these steps, we can know 4 important things:
 ```
 Subnet Address    -> 10.20.4.8/29
 Min Host Address  -> 10.20.4.9/29
@@ -157,11 +163,6 @@ Broadcast Address -> 10.20.4.15/29
 |255.192.0.0    | 	/10| 	11111111.11000000.00000000.00000000| 	10| 	22| 	4194304 |
 |255.128.0.0    | 	/9 | 	11111111.10000000.00000000.00000000| 	9 | 	23| 	8388608 |
 |255.0.0.0      |       /8 | 	11111111.00000000.00000000.00000000| 	8 | 	24| 	16777216| 
-
-### A command line utility that will help you understand more about Address Manipulation:
-```
-brew install ipcalc
-```
 
 <p align="center">
 <img width="497" alt="Screen Shot 2023-05-21 at 10 55 03 PM" src="https://github.com/iimyzf/NetPractice/assets/63506492/0faa87a2-922a-44fb-b86a-594cb8f9d798">
