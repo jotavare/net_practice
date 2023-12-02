@@ -24,18 +24,18 @@ This is a practical networking exercise aimed at exploring the fundamentals of n
 <a href="https://github.com/jotavare/netpractice/blob/main/subject/en_subject_netpractice.pdf">Click here</a> for the subject of this project.
 
 ## HOW TO USE
-### EXECUTION
 #### 1º - Change directory
 ```bash
-cd netpractice/netpractice/exercices/
+cd netpractice/netpractice/exercises/
 ```
 
 #### 2º - Open the index.html file
+> It doesn't work well in Firefox.
 ```bash
 open -a "Google Chrome" index.html
 ```
 
-### INFORMATION
+## PRACTICE AND EVALUATION
 #### Complete all 10 levels
 > There will be a practice and evaluation mode.
 
@@ -54,71 +54,81 @@ open -a "Google Chrome" index.html
 
 ## RESOURCES
 ### What is a subnet?
+> A **subnet or subnetwork** is a *network inside a network*. Subnets make networks more efficient.
 
-  A **subnet or subnetwork** is a *network inside a network*. Subnets make networks more efficient.
-  
-  **Subnetting** is the process of stealing bits from the HOST part of an IP address to divide the large network into smaller ones called subnets. After subnetting, we end up with **NETWORK SUBNET HOST** fields, and we always reserve an IP address to *identify the subnet* and another one to *identify the broadcast subnet address*, and through subnetting, network traffic can travel a shorter distance without passing through unnecessary routes to reach its destination.
+**Subnetting** is the process of stealing bits from the HOST part of an IP address to divide the large network into smaller ones called subnets. After subnetting, we end up with **NETWORK SUBNET HOST** fields, and we always reserve an IP address to *identify the subnet* and another one to *identify the broadcast subnet address*, and through subnetting, network traffic can travel a shorter distance without passing through unnecessary routes to reach its destination.
 
 ### How to calculate a subnet mask from an IP address step by step?
 
-  We will work with the IP address `10.20.4.13/29`
+We will work with the IP address `10.20.4.13/29`
 
-  #### Step 1: Find Subnet Number:
-    Subtract prefix number from /32
-    32 - 29 = 3
-    
-    Calculate Subnet Mask:
-    8 bits - 3 bits = 5 bits (Network bits turned on)
-    
-    You might be asking why 8 bits, 8 bits are required for each octet.
-    
-    |-------|-------|-------|-------|-------|-------|-------|-------|
-    | 128   | 64    | 32    | 16    | 8     | 4     | 2     | 1     |
-    |-------|-------|-------|-------|-------|-------|-------|-------|
-    | 1     | 1     | 1     | 1     | 1     | 0     | 0     | 0     |
-    |-------|-------|-------|-------|-------|-------|-------|-------|
-    | 128 + | 64 +  | 32 +  | 16 +  | 8     | =     248             |
-    |-------|-------|-------|-------|-------|-------|-------|-------|
-    
-    Subnet Mask = 255.255.255.248
-  
-  #### Step 2: Find Subnet Size:
-    Raise 2 to the power of deducation (8 - 3 = 5) -> Let's called it n.
-    
-    2 ** n    = Subnet Size.
-    2 ** 3    = Subnet Sizes for each subnet.
-    2 * 2 * 2 = 8
-    
-    NOTE: 8 is the block size for the subnet, so for example:
-    the increments will now be 0 8 16 24 32 and so on (we add 8 each time)
-    
-  #### Step 3: Find Broadcast Address:
-    Subnet size - 1
-    (2 ** n) - 1  = Broadcast Address
-    (2 ** 3) - 1  = (8 - 1) = 7
-  
-  #### Step 4: Locate IP Address Subnet:
-    Identify subnet block for IP address:
-    -> Where in each increment is the address 10.20.4.13/29 located (0 8 16 32 40)?
-    
-    13 falls between 8 and 16 and therefore the address is in the valid host range of the subnet 10.20.4.8/29
-  
-  #### Step 5: Calculate The Valid Hosts:
-    Subnet size - 2
-    (2 ** n) - 2 = Valid Host Range
-    (2 ** 3) - 2 = (8 - 2) = 6
-    
-  #### And from these steps, we can know 4 important things:
-    
-    Subnet Address    -> 10.20.4.8/29
-    Min Host Address  -> 10.20.4.9/29
-    Max Host Address  -> 10.20.4.14/29
-    Broadcast Address -> 10.20.4.15/29
+#### 1º - Find Subnet Number:
+```
+Subtract prefix number from /32
+32 - 29 = 3
+
+Calculate Subnet Mask:
+8 bits - 3 bits = 5 bits (Network bits turned on)
+
+You might be asking why 8 bits, 8 bits are required for each octet.
+
+|-------|-------|-------|-------|-------|-------|-------|-------|
+| 128   | 64    | 32    | 16    | 8     | 4     | 2     | 1     |
+|-------|-------|-------|-------|-------|-------|-------|-------|
+| 1     | 1     | 1     | 1     | 1     | 0     | 0     | 0     |
+|-------|-------|-------|-------|-------|-------|-------|-------|
+| 128 + | 64 +  | 32 +  | 16 +  | 8     | =       248           |
+|-------|-------|-------|-------|-------|-------|-------|-------|
+
+Subnet Mask = 255.255.255.248
+```
+
+#### 2º - Find Subnet Size:
+```
+Raise 2 to the power of deducation (8 - 3 = 5) -> Let's called it n.
+
+2 ** n    = Subnet Size.
+2 ** 3    = Subnet Sizes for each subnet.
+2 * 2 * 2 = 8
+
+NOTE: 8 is the block size for the subnet, so for example:
+the increments will now be 0 8 16 24 32 and so on (we add 8 each time)
+```
+
+#### 3º - Find Broadcast Address:
+```
+Subnet size - 1
+(2 ** n) - 1  = Broadcast Address
+(2 ** 3) - 1  = (8 - 1) = 7
+```
+
+#### 4º - Locate IP Address Subnet:
+```
+Identify subnet block for IP address:
+-> Where in each increment is the address 10.20.4.13/29 located (0 8 16 32 40)?
+
+13 falls between 8 and 16 and therefore the address is in the valid host range of the subnet 10.20.4.8/29
+
+#### 5º - Calculate The Valid Hosts:
+Subnet size - 2
+(2 ** n) - 2 = Valid Host Range
+(2 ** 3) - 2 = (8 - 2) = 6
+```
+
+#### And from these steps, we can know 4 important things:
+```
+Subnet Address    -> 10.20.4.8/29
+Min Host Address  -> 10.20.4.9/29
+Max Host Address  -> 10.20.4.14/29
+Broadcast Address -> 10.20.4.15/29
+```
 
 ### Subnet Mask Chart
-Here is a quick reference table for help when subnetting.
-|Subnet Mask 	|CIDR |	Binary Notation| 	Network Bits| 	Host Bits| 	Available Addresses |
-| -             | -    | -                                     | -    | -     | -           | 
+> Here is a quick reference table for help when subnetting.
+
+```
+|Subnet Mask 	|CIDR      |	Binary Notation                    |Network Bits  |Host Bits | Available Addresses |
+| -             | -        | -                                     | -    | -     | -           | 
 |255.255.255.255| 	/32| 	11111111.11111111.11111111.11111111| 	32| 	0 | 	1       |
 |255.255.255.254| 	/31| 	11111111.11111111.11111111.11111110| 	31| 	1 | 	2       |
 |255.255.255.252| 	/30| 	11111111.11111111.11111111.11111100| 	30| 	2 | 	4       |
@@ -143,15 +153,17 @@ Here is a quick reference table for help when subnetting.
 |255.224.0.0    | 	/11| 	11111111.11100000.00000000.00000000| 	11| 	21| 	2097152 |
 |255.192.0.0    | 	/10| 	11111111.11000000.00000000.00000000| 	10| 	22| 	4194304 |
 |255.128.0.0    | 	/9 | 	11111111.10000000.00000000.00000000| 	9 | 	23| 	8388608 |
-|255.0.0.0      |   /8 | 	11111111.00000000.00000000.00000000| 	8 | 	24| 	16777216| 
+|255.0.0.0      |       /8 | 	11111111.00000000.00000000.00000000| 	8 | 	24| 	16777216| 
+```
 
 ### A command line utility that will help you understand more about Address Manipulation:
+```
+brew install ipcalc
+```
 
-    brew install ipcalc
-   
-   <p align="center">
-     <img width="497" alt="Screen Shot 2023-05-21 at 10 55 03 PM" src="https://github.com/iimyzf/NetPractice/assets/63506492/0faa87a2-922a-44fb-b86a-594cb8f9d798">
-   </p>
+<p align="center">
+<img width="497" alt="Screen Shot 2023-05-21 at 10 55 03 PM" src="https://github.com/iimyzf/NetPractice/assets/63506492/0faa87a2-922a-44fb-b86a-594cb8f9d798">
+</p>
 
 ## LICENSE
 <p>
