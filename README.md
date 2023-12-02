@@ -19,7 +19,7 @@
 </p>
 
 ## ABOUT
-NetPractice is a practical networking exercise aimed at exploring the fundamentals of networking. In this project, i will configure small-scale networks and delve into the world of TCP/IP addressing. The goal is to complete 10 levels, each designed to challenge and enhance my networking knowledge.
+This is a practical networking exercise aimed at exploring the fundamentals of networking. In this project, I will configure small-scale networks and delve into the world of TCP/IP addressing. The goal is to complete 10 levels, each designed to challenge and enhance my networking knowledge.
 
 <a href="https://github.com/jotavare/netpractice/blob/main/subject/en_subject_netpractice.pdf">Click here</a> for the subject of this project.
 
