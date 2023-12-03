@@ -44,6 +44,7 @@ open -a "Google Chrome" index.html
 
 ```
 brew install ipcalc
+ipcalc 172.30.0.69/30
 ```
 
 #### Complete all 10 levels
