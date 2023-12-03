@@ -39,7 +39,7 @@ open -a "Google Chrome" index.html
 ```
 
 ## PRACTICE AND EVALUATION
-#### Utility
+#### UTILITY
 > This utility will help us understand more about Address Manipulation:
 
 ```
@@ -47,7 +47,7 @@ brew install ipcalc
 ipcalc 172.30.0.69/30
 ```
 
-#### Complete all 10 levels
+#### COMPLETE ALL 10 LEVELS
 > There will be a practice and evaluation mode:
 
 - `Practice mode` - Insert your 42 intra username. You will do all 10 levels.
@@ -56,7 +56,7 @@ ipcalc 172.30.0.69/30
 > [!WARNING]
 > Before moving to the next level, don’t forget to export your configuration using the `Get My Config` button so you can put it in your Git repository.
 
-#### Buttons
+#### BUTTONS
 > There will be 2 buttons on the top left corner (3 if you completed a level):
 
 - `Check again` - Verify whether your configuration was correct or not.
@@ -132,7 +132,7 @@ Max Host Address  -> 10.20.4.14/29
 Broadcast Address -> 10.20.4.15/29
 ```
 
-#### Subnet Mask Chart
+#### SUBNET MASK TABLE
 > Here is a quick reference table for help when subnetting.
 
 |Subnet Mask 	|CIDR      |	Binary Notation                    |Network Bits  |Host Bits | Available Addresses |
