@@ -23,8 +23,8 @@
 ## ABOUT
 This is a practical networking exercise aimed at exploring the fundamentals of networking. In this project, I configured a small-scale network and delved into the world of TCP/IP addressing. The goal is to complete 10 levels, each designed to challenge and enhance my networking knowledge.
 
-- [Project subject](https://github.com/jotavare/netpractice/blob/main/subject/en_subject_netpractice.pdf)
-- [References](https://github.com/jotavare/42-resources#04-netpractice)
+- [Subject](https://github.com/jotavare/netpractice/blob/main/subject/en_subject_netpractice.pdf) `PDF`
+- [References](https://github.com/jotavare/42-resources#04-netpractice) `GitHub`
 
 ## HOW TO USE
 #### 1º - Change directory
@@ -92,7 +92,7 @@ Subnet Mask = 255.255.255.248
 
 > 2º - Find Subnet Size:
 ```
-Raise 2 to the power of deducation (8 - 3 = 5) -> Let's call it n.
+Raise 2 to the power of deduction (8 - 3 = 5) -> Let's call it n.
 
 2 ** n    = Subnet Size.
 2 ** 3    = Subnet Sizes for each subnet.
