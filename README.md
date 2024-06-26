@@ -17,6 +17,7 @@
 	<a href="#how-to-use">How to use</a> •
 	<a href="#practice-and-evaluation">Practice and Evaluation</a> •
 	<a href="#subnet">Subnet</a> •
+	<a href="#contributing">Contributing</a> •
 	<a href="#license">License</a>
 </p>
 
@@ -163,7 +164,10 @@ Broadcast Address -> 10.20.4.15/29
 |255.128.0.0    | 	/9 | 	11111111.10000000.00000000.00000000| 	9 | 	23| 	8388608 |
 |255.0.0.0      |       /8 | 	11111111.00000000.00000000.00000000| 	8 | 	24| 	16777216|
 
+## CONTRIBUTING
+
+If you find any issues or have suggestions for improvements, feel free to fork the repository and open an issue or submit a pull request.
+
 ## LICENSE
-<p>
-This work is published under the terms of <a href="https://github.com/jotavare/net_practice/blob/main/LICENSE">Unlicense</a>.
-</p>
+
+This project is available under the MIT License. For further details, please refer to the [LICENSE](https://github.com/jotavare/net_practice/blob/master/LICENSE) file.
